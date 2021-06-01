@@ -45,7 +45,7 @@
         </config-file>
         
         <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
-                <string>We are using a camera to... </string>
+                <string>Wodify Client requires camera access to allow you to change your profile picture.</string>
         </config-file>  
                
     </platform>
