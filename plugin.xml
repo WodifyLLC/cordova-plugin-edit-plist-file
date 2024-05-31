@@ -25,8 +25,6 @@
         <engine name="cordova" version=">=3.5.0" />
     </engines>
     
-    
-    
     <!-- ios -->
     <platform name="ios">
         
@@ -45,9 +43,19 @@
         </config-file>
         
         <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
-                <string>Wodify Client requires camera access to allow you to change your profile picture.</string>
+            <string>Wodify Client requires camera access to allow you to change your profile picture.</string>
         </config-file>  
-               
+        
+        <!-- Adding NSLocationAlwaysAndWhenInUseUsageDescription -->
+        <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" target="*-Info.plist">
+            <string>Wodify Client requires location access to provide location-based services.</string>
+        </config-file>
+
+        <!-- Adding NSUserTrackingUsageDescription -->
+        <config-file parent="NSUserTrackingUsageDescription" target="*-Info.plist">
+            <string>Wodify Client requires permission to track your activity for improving user experience and providing personalized services.</string>
+        </config-file>
+
     </platform>
     
 </plugin>
