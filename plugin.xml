@@ -44,9 +44,19 @@
             </array>
         </config-file>
         
+        <!-- Camera Permission -->
         <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
-                <string>Wodify Client requires camera access to allow you to change your profile picture.</string>
+            <string>Wodify Client requires camera access to allow you to change your profile picture.</string>
         </config-file>  
+        
+        <!-- Gallery Permission -->
+        <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
+            <string>Wodify Client needs access to your photo library to share and save images.</string>
+        </config-file>
+
+        <config-file parent="NSPhotoLibraryAddUsageDescription" target="*-Info.plist">
+            <string>Wodify Client needs permission to save images to your photo gallery.</string>
+        </config-file>
                
     </platform>
     
